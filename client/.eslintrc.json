@@ -1,0 +1,36 @@
+{
+  "extends": [
+    "next",
+    "next/core-web-vitals",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:prettier/recommended",
+    "prettier"
+  ],
+  "plugins": ["@typescript-eslint", "eslint-plugin-import-helpers"],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": 2021,
+    "sourceType": "module"
+  },
+  "ignorePatterns": ["/*.config.*"],
+  "rules": {
+    // Reglas personalizadas
+    "import-helpers/order-imports": [
+      "warn",
+      {
+        "newlinesBetween": "always",
+        "groups": [["/^next/", "module"], "/^@/styles/", "/^@/components/", "/^@/lib/", ["parent", "sibling", "index"]],
+        "alphabetize": {
+          "order": "asc",
+          "ignoreCase": true
+        }
+      }
+    ],
+    "react/react-in-jsx-scope":"off",
+    "no-undef":"off",
+    "no-unused-vars":"warn",
+    "react-hooks/rules-of-hooks":"off"
+  }
+}
+
+
