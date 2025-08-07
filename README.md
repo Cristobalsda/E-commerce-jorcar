@@ -1,6 +1,6 @@
-# jorcarv1
+# Ecommerce
 
-Para cada tarea crear una rama nueva en git para minimizar los errores.
-Realizar migraciones cada que se hace un pull del proyecto
-
-Leer el README.md del server y del client para más información de paquetes instalados
+E-Commerce echo para una tienda de repuestos vehiculares
+<div align="start">
+  <img src="https://github.com/user-attachments/assets/dd27ce6f-71a8-4f02-baf7-a887d266d5fa" alt="Ecommerce" width="200" style="border-radius: 10px;"/>
+</div>
